@@ -67,8 +67,6 @@ a:hover{
     transition: all 2s;  
 }
 
-
-
 .wrapper{
     /* width: 70%; */
     margin: auto;
@@ -102,20 +100,17 @@ img{
 /****************/
 
 footer ul{    
-    display:flex;
-    justify-content: space-between;
     border-top: solid 1px lightgray;
     margin-top: 2em;
     padding-top: 1em;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .backtop{
-    margin-left: 5.5em;
-}
-
-.footername{
-    margin-right: 1em;
+    margin-left: 8em;
 }
 
 .home,
@@ -181,17 +176,16 @@ footer ul{
     margin-top: 7em;
     }
 
-    footer ul{
-        height: 7em;
-    }
+    /* .footerWrapper{
+        display: flex;
+        justify-content: space-around;
+    } */
 
-    
-    
     .portfolio,
     .contact,
     .home{
         display: unset;
-        width: 50px;
+        color: black;
     }
 
     .footername{
@@ -201,24 +195,20 @@ footer ul{
     .home{
         margin-left: 15em;
     }
-
+    
     .contact{
         margin-right: 2em;
     }
-    
+
     .backtop{
-        /* display: none; */
+        display: none;
     }
 
     .clearfix::after{
         content:"";
         display: table;
         clear: both;
-    }
-
-    
-
-    
+    }  
 }
 
 /**********/
@@ -243,7 +233,6 @@ footer ul{
     }
    .wrapper{
         width:90%;
-        /* background-color: dodgerblue; */
     }
     
 
@@ -255,10 +244,13 @@ footer ul{
         height: 3em;
     }
 
-    .home,
-    .portfolio,
-    .contact{
-        display: contents ;
+    .home{
+        margin-left: 25em;
     }
+
+    .contact{
+        margin-right: 3em;
+    }
+
 
 }
