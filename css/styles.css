@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/************/
+/* HEADER */
+/**********/
+
+.nav-wrapper{
+    margin: auto;
+    text-align: center;
+    background: linear-gradient( dodgerblue, transparent );
+
+}
+
+.name{
+    margin-bottom: 1.5em;
+    padding-top: 1em;
+    font-size: normal;
+    
+}
+
+nav{
+    height: 280px;
+}
+
+ nav li{
+    
+    background-color: snow;
+    border: none;
+    /* box-shadow: 3px 5px 0 turquoise; */
+    list-style-type: none;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    padding: 1em;
+    height: 2.5em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*****************/
+/* BASE STYLES */
+/*****************/
+h1,
+h3,
+ul,
+li,
+p{
+    font-family: 'Gotu', sans-serif;
+}
+
+.name{
+    color: white;
+    
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: aqua;
+    transition: all 2s;  
+}
+
+
+
+.wrapper{
+    /* width: 70%; */
+    margin: auto;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.content,
+h3,
+p{
+    padding: .5em;
+}
+
+header .wrapper{
+    padding-top: 2em;
+    margin-bottom: 3.5em;
+}
+
+.portfolio{
+    margin-top: 2em;
+}
+
+img{
+    width: 100%;
+}
+
+
+/******************/
+/* FOOTER STYLES */
+/****************/
+
+footer ul{    
+    display:flex;
+    justify-content: space-between;
+    border-top: solid 1px lightgray;
+    margin-top: 2em;
+    padding-top: 1em;
+    list-style-type: none;
+}
+
+.backtop{
+    margin-left: 5.5em;
+}
+
+.footername{
+    margin-right: 1em;
+}
+
+.home,
+.portfolio,
+.contact{
+    display: none;
+}
+
+/***********************/
+/* Styles for tablets */
+/*********************/
+
+@media(min-width:768px){
+    
+    nav{
+        text-align: center;
+        height: 200px;
+    }
+    
+    nav li{
+        display:inline-block;
+        background: none;
+        /* margin: 4em auto; */
+    }
+
+    a{
+        color:white;
+        font-size: large;
+    }
+
+    header p{
+        margin: 2.5em;
+    }
+
+    .profileImg{
+        float: right;
+        width: 50%;
+        margin: 2.5em
+    }
+   
+    .left{
+        float: left;
+        width: 50%;
+    }
+
+    /* .right{
+        float: right;
+        width: 50%;
+    } */
+    
+/***************/
+/* FOOTER STYLES */
+/*************/
+
+   
+
+     footer .content{
+    width: 70%;
+    margin: 5em auto 1em;
+    }
+    
+    footer div{
+    margin-top: 7em;
+    }
+
+    footer ul{
+        height: 7em;
+    }
+
+    
+    
+    .portfolio,
+    .contact,
+    .home{
+        display: unset;
+        width: 50px;
+    }
+
+    .footername{
+        margin-right: 3em;
+    }
+
+    .home{
+        margin-left: 15em;
+    }
+
+    .contact{
+        margin-right: 2em;
+    }
+    
+    .backtop{
+        /* display: none; */
+    }
+
+    .clearfix::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+
+    
+
+    
+}
+
+/**********/
+/*DESKTOP*/
+/********/
+
+@media(min-width:1024px){
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 180px;
+       }
+    
+    nav li{
+        margin-top: 1.5em;
+    }
+
+    .name{
+        margin:.5em 0 0 2em;
+        font-size: xx-large;
+    }
+   .wrapper{
+        width:90%;
+        /* background-color: dodgerblue; */
+    }
+    
+
+    .left{
+        width: 33%;
+    }
+
+    footer{
+        height: 3em;
+    }
+
+    .home,
+    .portfolio,
+    .contact{
+        display: contents ;
+    }
+
+}
