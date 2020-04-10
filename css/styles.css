@@ -10,24 +10,24 @@
 .nav-wrapper{
     margin: auto;
     text-align: center;
-    background: linear-gradient( dodgerblue, transparent );
 
 }
 
 .name{
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding-top: 1em;
-    font-size: normal;
+    font-size: xx-large;
+    color: black;
     
 }
 
 nav{
-    height: 280px;
+    height: 340px;
 }
 
  nav li{
     
-    background-color: snow;
+    background-color:snow;
     border: none;
     /* box-shadow: 3px 5px 0 turquoise; */
     list-style-type: none;
@@ -39,6 +39,17 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+header .wrapper{
+    padding-top: 2em;
+    margin-bottom: 3.5em;
+}
+
+header {
+    /* background: linear-gradient(#f3f3f3,transparent); */
+    background: linear-gradient( dodgerblue, lightgrey
+    ,transparent );
+    
+}
 
 /*****************/
 /* BASE STYLES */
@@ -51,10 +62,10 @@ p{
     font-family: 'Gotu', sans-serif;
 }
 
-.name{
-    color: white;
-    
-}
+.name,
+.footername{
+    font-family: 'Marck Script', cursive;
+    font-family: 'Lobster', cursive;    }
 
 a{
     display: block;
@@ -64,7 +75,11 @@ a{
 
 a:hover{
     color: aqua;
-    transition: all 2s;  
+    transition: all 1.5s;  
+}
+
+body{
+    background:linear-gradient( lightgray,transparent) ;
 }
 
 .wrapper{
@@ -75,49 +90,80 @@ a:hover{
     padding-right: 1em;
 }
 
+.headerwrap{
+    margin: auto;
+    text-align: center;
+}
+
+
 .content,
-h3,
 p{
-    padding: .5em;
+    padding: 1em;
 }
 
-header .wrapper{
-    padding-top: 2em;
-    margin-bottom: 3.5em;
+#contact,
+.portF,
+.h3skills{
+    margin-top: 7em;
 }
 
-.portfolio{
-    margin-top: 2em;
+
+.portF{
+    margin-top: 8em;
 }
 
 img{
     width: 100%;
 }
 
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}  
+
+
+
 
 /******************/
 /* FOOTER STYLES */
 /****************/
 
+footer{
+    margin-top: 3em;
+}
+
+.footerbackground{
+    background-color: #f3f3f3;
+}
+
 footer ul{    
-    border-top: solid 1px lightgray;
-    margin-top: 2em;
-    padding-top: 1em;
+    border-top: solid 2px darkgray;
+    margin-top: 4em;
+    padding: 2em;
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
+}
+
+footer p,
+footer h3{
+    color: mediumblue;
 }
 
 .backtop{
     margin-left: 8em;
 }
-
+.skillsli,
 .home,
-.portfolio,
-.contact{
+.portfolioli,
+.contactli{
     display: none;
 }
+
+/* .footerbackground{
+    background: linear-gradient(to top, dodgerblue, transparent);
+} */
 
 /***********************/
 /* Styles for tablets */
@@ -141,6 +187,10 @@ footer ul{
         font-size: large;
     }
 
+    .name{
+        font-size: xx-large;
+    }
+
     header p{
         margin: 2.5em;
     }
@@ -155,17 +205,11 @@ footer ul{
         float: left;
         width: 50%;
     }
-
-    /* .right{
-        float: right;
-        width: 50%;
-    } */
-    
+   
 /***************/
 /* FOOTER STYLES */
 /*************/
 
-   
 
      footer .content{
     width: 70%;
@@ -176,39 +220,31 @@ footer ul{
     margin-top: 7em;
     }
 
-    /* .footerWrapper{
-        display: flex;
-        justify-content: space-around;
-    } */
-
-    .portfolio,
-    .contact,
+    .skillsli,
+    .portfolioli,
+    .contactli,
     .home{
         display: unset;
         color: black;
     }
 
     .footername{
-        margin-right: 3em;
+        margin-left: 2em;
+        font-size: x-large;
     }
 
     .home{
-        margin-left: 15em;
+        margin-left: 5em;
     }
     
-    .contact{
-        margin-right: 2em;
+    .contactli{
+        margin-right: 1em;
     }
 
     .backtop{
         display: none;
     }
 
-    .clearfix::after{
-        content:"";
-        display: table;
-        clear: both;
-    }  
 }
 
 /**********/
@@ -244,13 +280,19 @@ footer ul{
         height: 3em;
     }
 
+    .footername{
+        margin-left: 2em;
+    }
+
     .home{
-        margin-left: 25em;
+        margin-left: 18em;
     }
 
-    .contact{
-        margin-right: 3em;
+    .contactli{
+        margin-right: 2em;
     }
 
+    
+    
 
 }
