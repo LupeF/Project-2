@@ -101,6 +101,10 @@ p{
     padding: 1em;
 }
 
+.content{
+    min-height: 120px;
+}
+
 #contact,
 .portF,
 .h3skills{
@@ -142,8 +146,6 @@ footer ul{
     margin-top: 4em;
     padding: 2em;
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;    
 }
 
 footer p,
@@ -151,9 +153,14 @@ footer h3{
     color: mediumblue;
 }
 
-.backtop{
-    margin-left: 8em;
+.footername{
+    float: left;
 }
+
+.backtop{
+    float: right;
+}
+
 .skillsli,
 .home,
 .portfolioli,
@@ -161,9 +168,6 @@ footer h3{
     display: none;
 }
 
-/* .footerbackground{
-    background: linear-gradient(to top, dodgerblue, transparent);
-} */
 
 /***********************/
 /* Styles for tablets */
@@ -218,6 +222,11 @@ footer h3{
     
     footer div{
     margin-top: 7em;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: space-between;
     }
 
     .skillsli,
